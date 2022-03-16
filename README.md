@@ -53,15 +53,15 @@ The SoC of battery can be estimated using the measured current and voltage value
 
 ## Software Used
 
-- MPLAB® X IDE [v6.0.0 or newer](http://www.microchip.com/mplab/mplab-x-ide) 
-- MPLAB® XC8 Compiler [v2.36.0 or newer](http://www.microchip.com/mplab/compilers) 
-- MPLAB® Code Configurator (MCC) [v5.1.1 or newer](https://www.microchip.com/mplab/mplab-code-configurator) 
-- Microchip PIC16F1xxxx Series Device Support [v1.9.163 or newer pack](https://packs.download.microchip.com/)
-- MPLAB® Melody Library
-   - ADC v3.0.6
-   - TMR0 v4.0.8
-   - EUSART v7.0.0
-   - GPIO/Pins drivers v3.2.2
+- MPLAB® X IDE [6.0.0 or newer](http://www.microchip.com/mplab/mplab-x-ide) 
+- MPLAB® XC8 Compiler [2.36.0 or newer](http://www.microchip.com/mplab/compilers) 
+- Microchip PIC16F1xxxx Series Device Support [1.9.163 or newer pack](https://packs.download.microchip.com/)
+- MPLAB® Data Visualizer [1.3.1136 or newer](https://www.microchip.com/en-us/tools-resources/debug/mplab-data-visualizer)
+- MPLAB® Code Configurator (MCC) [5.1.1 or newer](https://www.microchip.com/mplab/mplab-code-configurator) 
+- ADC MCC Melody driver 3.0.6
+- TMR0 MCC Melody driver 4.0.8
+- UART MCC Melody driver 1.6.0
+- GPIO/Pins drivers MCC Melody driver 3.2.2
 
 ## Hardware Used
 
