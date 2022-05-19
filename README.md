@@ -30,6 +30,8 @@ A passive voltage divider network, with two resistors connected in series is des
 
 The current mirror circuit generates the voltage signal in proportion to the current flow. The current mirror circuit is used to measure current in the range of 0 to 1A. This voltage signal is fed to the ADC of PIC16F15276 microcontroller to measure current through the battery terminal and current drawn by the load.
 
+The Current Direction control is designed using P-channel MOSFET, Schottky diode and Resistor, the current direction control circuit is used to switch the load source power. When the USB power is available the switch directs power from USB to load and when USB power is not available the switch directs power from battery to load.
+  
 The SoC of battery can be estimated using the measured current and voltage values and then displayed on the custom dashboard window of data visualizer along with the measured voltage and current values.
 
 <p align="center">
@@ -50,6 +52,14 @@ The SoC of battery can be estimated using the measured current and voltage value
   <img width=auto height=auto src="images/CurrentMeasurementCircuit.png">
   <br>Figure 3 : Current Measurement Circuit<br>
 </p>
+
+### Current Direction Control (MOSFET Switch)
+
+<p align="center">
+  <img width=auto height=auto src="images/MosfetSwitch.png">
+  <br>Figure 4 : Current Direction Control Circuit<br>
+</p>
+
 
 ## Software Used
 
@@ -83,7 +93,7 @@ The PIC16F15276 Curiosity Nano evaluation kit along with Curiosity nano base for
 
 <p align="center">
   <img width=auto height=auto src="images/HardwareSetup.png">
-  <br>Figure 4 : Battery Monitoring System Hardware Setup<br>
+  <br>Figure 5 : Battery Monitoring System Hardware Setup<br>
 </p>
 
 ### Hardware Connection Details
@@ -110,28 +120,28 @@ The data visualizer tool is used as a graphical user interface while demonstrati
 
 <p align="center">
   <img width=auto height=auto src="images/DVIcon.png">
-  <br>Figure 5 : Standalone Data Visualizer icon<br>
+  <br>Figure 6 : Standalone Data Visualizer icon<br>
 </p>
 
 2.	In the data visualizer window, click on Configuration tab.
 
 <p align="center">
   <img width=auto height=auto src="images/DVConfig.png">
-  <br>Figure 6 : Data Visualizer Configuration Window<br>
+  <br>Figure 7 : Data Visualizer Configuration Window<br>
 </p>
 
 3.	In the Modules section, expand External connection option and then double click on Serial port.
 
 <p align="center">
   <img width=auto height=auto src="images/DVSerialPort.png">
-  <br>Figure 7 : Data Visualizer Modules Window<br>
+  <br>Figure 8 : Data Visualizer Modules Window<br>
 </p>
 
 4.	From Serial Port Control Panel, select the Curiosity Virtual Com Port which is connected to the host device.
 
 <p align="center">
   <img width=auto height=auto src="images/DVSerialCntrlPanel.png">
-  <br>Figure 8 : Data Visualizer Serial Control Panel<br>
+  <br>Figure 9 : Data Visualizer Serial Control Panel<br>
 </p>
 
 ### Data Streamer Configuration
@@ -142,21 +152,21 @@ The data visualizer tool is used as a graphical user interface while demonstrati
 
 <p align="center">
   <img width=auto height=auto src="images/DVDatastreamer.png">
-  <br>Figure 9 : Data Visualizer Data streamer configure window<br>
+  <br>Figure 10 : Data Visualizer Data streamer configure window<br>
 </p>
 
 4.	Click Load in the data streamer control panel window, as shown in Figure 9. The Data Streamer window will load with ports, as shown in Figure 10.
 
 <p align="center">
   <img width=auto height=auto src="images/DVDatastreamerPorts.png">
-  <br>Figure 10 : Data Visualizer Data streamer control panel<br>
+  <br>Figure 11 : Data Visualizer Data streamer control panel<br>
 </p>
 
 5.	Drag COM0 output of the Serial Port control panel window and drop on to Source port of data streamer control panel window, as shown in Figure 11.
 
 <p align="center">
   <img width=auto height=auto src="images/DVSerialtoDatastreamer.png">
-  <br>Figure 11 : Connection between Serial Port and Data Streamer Window<br>
+  <br>Figure 12 : Connection between Serial Port and Data Streamer Window<br>
 </p>
 
 ### Custom Dashboard Configuration 
@@ -166,14 +176,14 @@ The data visualizer tool is used as a graphical user interface while demonstrati
 
 <p align="center">
   <img width=auto height=auto src="images/DVCustomBoard.png">
-  <br>Figure 12 : Custom Dashboard Window<br>
+  <br>Figure 13 : Custom Dashboard Window<br>
 </p>
 
 3.	Check Edit below the dashboard I/O window, click Load, and set the appropriate path for the provided custom dashboard file from the host computer, as shown in Figure 13.
 
 <p align="center">
   <img width=auto height=auto src="images/DVBMSCustomBoard.png">
-  <br>Figure 13 : Battery Monitoring System Custom Dashboard Window<br>
+  <br>Figure 14 : Battery Monitoring System Custom Dashboard Window<br>
 </p>
 
 4.	Check Show Endpoints below the dashboard I/O window.
@@ -181,7 +191,7 @@ The data visualizer tool is used as a graphical user interface while demonstrati
 
 <p align="center">
   <img width=auto height=auto src="images/DVCustomBoardConnection.png">
-  <br>Figure 14 : Data Visualizer Connection Reference Diagram<br>
+  <br>Figure 15 : Data Visualizer Connection Reference Diagram<br>
 </p>
 
 
@@ -207,7 +217,7 @@ The data visualizer tool is used as a graphical user interface while demonstrati
 
 <p align="center">
   <img width=auto height=auto src="images/MCCClock.png">
-  <br>Figure 15 : Clock Module Window<br>
+  <br>Figure 16 : Clock Module Window<br>
 </p>
  
 ### Configuration Bits:
@@ -216,7 +226,7 @@ The data visualizer tool is used as a graphical user interface while demonstrati
 
 <p align="center">
   <img width=auto height=auto src="images/MCCConfigurationBit.png">
-  <br>Figure 16 : Configuration Bits Window<br>
+  <br>Figure 17 : Configuration Bits Window<br>
 </p>
 
 ### ADC: 
@@ -226,7 +236,7 @@ The data visualizer tool is used as a graphical user interface while demonstrati
 
 <p align="center">
   <img width=auto height=auto src="images/MCCADC.png">
-  <br>Figure 17 : ADC Configuration Window<br>
+  <br>Figure 18 : ADC Configuration Window<br>
 </p>
 
 ### EUSART:
@@ -234,7 +244,7 @@ The data visualizer tool is used as a graphical user interface while demonstrati
 
 <p align="center">
   <img width=auto height=auto src="images/MCCEUSART.png">
-  <br>Figure 18 : EUSART Configuration Window<br>
+  <br>Figure 19 : EUSART Configuration Window<br>
 </p>
 
 ### TMR0:
@@ -245,19 +255,19 @@ The data visualizer tool is used as a graphical user interface while demonstrati
 
 <p align="center">
   <img width=auto height=auto src="images/MCCTMR0.png">
-  <br>Figure 19 : TMR0 Configuration Window<br>
+  <br>Figure 20 : TMR0 Configuration Window<br>
 </p>
 
 ### Pin Grid View 
 
 <p align="center">
   <img width=auto height=auto src="images/MCCPinsGridView.png">
-  <br>Figure 20 : Pin Grid View Window<br>
+  <br>Figure 21 : Pin Grid View Window<br>
 </p>
 
 ### Pins 
 
 <p align="center">
   <img width=auto height=auto src="images/MCCPins.png">
-  <br>Figure 20 : Pins Window<br>
+  <br>Figure 22 : Pins Window<br>
 </p>
