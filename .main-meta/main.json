@@ -4,13 +4,13 @@
     "content": {
         "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.pic16f15276-cnano-battery-monitoring-system-mplab-mcc",
-        "version": " ",
-        "displayName": "",
+        "version": "1.0.0",
+        "displayName": "Battery Monitoring System Using PIC16F15276 Microcontroller",
         "projectName": "pic16f15276-cnano-battery-monitoring-system-mplab-mcc",
-        "shortDescription": "This example demonstrates battery monitoring system by measuring battery charging and discharging power using built in ADC peripheral of the PIC microcontroller Compatible PIC16F152xx family of MCUs are PIC16F15214 PIC16F15223 PIC16F15245 PIC16F15254",
+        "shortDescription": "This example demonstrates battery monitoring system by measuring battery charging and discharging power using built in ADC peripheral of the PIC microcontroller. Compatible PIC16F152xx family of MCUs are PIC16F15214,PIC16F15223,PIC16F15245,PIC16F15254",
         "ide": {
             "name": "MPLAB X",
-            "semverRange": ">=6.00.0"
+            "semverRange": ">=6.0.0"
         },
         "compiler": [
             {
@@ -19,12 +19,12 @@
             }
         ],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "PIC16F1xxxx_DFP",
+            "semverRange": "^1.9.163"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "MCC",
+            "semverRange": ">=5.1.1"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -37,8 +37,8 @@
             }
         },
         "author": "Srinivasa K R",
-        "peripherals": [],
-        "keywords": [],
+        "peripherals": ["ADC","TMR"],
+        "keywords": ["Battery Management","DC","Internet of Things"],
         "additionalData": {
             "longDescription": {
                 "metaDataVersion": "1.0.0",
