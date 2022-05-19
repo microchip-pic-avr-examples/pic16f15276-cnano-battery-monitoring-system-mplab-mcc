@@ -147,22 +147,22 @@ The data visualizer tool is used as a graphical user interface while demonstrati
 ### Data Streamer Configuration
 
 1.	Configure the data streamer for interfacing the dashboard window with the serial port control panel.
-2.	To open data stream control panel, open the Configuration tab located on the left side of the data visualizer tool, expand Protocols, and click the Data Streamer, Data Streamer window that appears, as shown in Figure 9.
-3.	Click the ‘...’ symbol in the Data Stream control panel window, set an appropriate path for the provided data streamer file from the host computer, as shown in Figure 9.
+2.	To open data stream control panel, open the Configuration tab located on the left side of the data visualizer tool, expand Protocols, and click the Data Streamer, Data Streamer window that appears, as shown in Figure 10.
+3.	Click the ‘...’ symbol in the Data Stream control panel window, set an appropriate path for the provided data streamer file from the host computer, as shown in Figure 10.
 
 <p align="center">
   <img width=auto height=auto src="images/DVDatastreamer.png">
   <br>Figure 10 : Data Visualizer Data streamer configure window<br>
 </p>
 
-4.	Click Load in the data streamer control panel window, as shown in Figure 9. The Data Streamer window will load with ports, as shown in Figure 10.
+4.	Click Load in the data streamer control panel window, as shown in Figure 10. The Data Streamer window will load with ports, as shown in Figure 11.
 
 <p align="center">
   <img width=auto height=auto src="images/DVDatastreamerPorts.png">
   <br>Figure 11 : Data Visualizer Data streamer control panel<br>
 </p>
 
-5.	Drag COM0 output of the Serial Port control panel window and drop on to Source port of data streamer control panel window, as shown in Figure 11.
+5.	Drag COM0 output of the Serial Port control panel window and drop on to Source port of data streamer control panel window, as shown in Figure 12.
 
 <p align="center">
   <img width=auto height=auto src="images/DVSerialtoDatastreamer.png">
@@ -172,14 +172,14 @@ The data visualizer tool is used as a graphical user interface while demonstrati
 ### Custom Dashboard Configuration 
 
 1.	Configure the custom dashboard window to display the battery monitoring information. 
-2.	To open the custom dashboard window, open the Configuration tab located on the left side of the data visualizer tool, expand Visualization, and click Custom Dashboard that appears as shown in Figure 12.
+2.	To open the custom dashboard window, open the Configuration tab located on the left side of the data visualizer tool, expand Visualization, and click Custom Dashboard that appears as shown in Figure 13.
 
 <p align="center">
   <img width=auto height=auto src="images/DVCustomBoard.png">
   <br>Figure 13 : Custom Dashboard Window<br>
 </p>
 
-3.	Check Edit below the dashboard I/O window, click Load, and set the appropriate path for the provided custom dashboard file from the host computer, as shown in Figure 13.
+3.	Check Edit below the dashboard I/O window, click Load, and set the appropriate path for the provided custom dashboard file from the host computer, as shown in Figure 14.
 
 <p align="center">
   <img width=auto height=auto src="images/DVBMSCustomBoard.png">
@@ -187,7 +187,7 @@ The data visualizer tool is used as a graphical user interface while demonstrati
 </p>
 
 4.	Check Show Endpoints below the dashboard I/O window.
-5.	Drag the appropriate port pins from the Data Streamer control panel and drop onto the respective endpoints, as shown in the Figure 14.
+5.	Drag the appropriate port pins from the Data Streamer control panel and drop onto the respective endpoints, as shown in the Figure 15.
 
 <p align="center">
   <img width=auto height=auto src="images/DVCustomBoardConnection.png">
