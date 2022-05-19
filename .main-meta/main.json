@@ -38,7 +38,7 @@
         },
         "author": "Srinivasa K R",
         "peripherals": ["ADC","TMR"],
-        "keywords": ["Battery Management","DC","IoT"],
+        "keywords": ["Battery Management","Battery Monitoring","Battery","DC","IoT"],
         "additionalData": {
             "longDescription": {
                 "metaDataVersion": "1.0.0",

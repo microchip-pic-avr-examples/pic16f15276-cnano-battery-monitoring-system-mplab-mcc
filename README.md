@@ -3,13 +3,15 @@
 
 # Battery Monitoring System Using PIC16F15276 Microcontroller
 
-Most of the embedded systems, including Internet of Things (IoT) systems which are deployed in remote location commonly uses battery as source of power. battery as a source of power. These battery-operated applications require battery charge to be monitored for the safe and reliable operation. The battery charge measurement is required to estimate the State of Charge (SoC) of the battery.
+Most of the embedded systems, including Internet of Things (IoT) systems which are deployed in remote location commonly uses battery as source of power. These battery-operated applications require battery charge to be monitored for the safe and reliable operation. The battery charge measurement is required to estimate the State of Charge (SoC) of the battery.
 
 The PIC16F15276 microcontroller include 10-bit Analog-to-Digital Converter (ADC), Timer, and Enhanced Universal Synchronous Asynchronous Receiver Transmitter (EUSART) peripherals which can be used for realizing battery monitoring system application.
 
 The ADC is used to convert the analog signals into digital, EUSART is used to communicate with the external integrated circuits. Additionally, the EUSART interface can communicate with Data visualizer, and Timer is used for scheduling the events.
 
 This code example highlights the implementation of a Battery Monitoring System using PIC16F15276 microcontroller. It demonstrates how to measure battery charge and estimate the SoC of battery.
+
+**Note: The designed circuit and code example is tested ONLY with the Li-Ion battery.**
 
 ## Related Documentation
 
@@ -30,7 +32,7 @@ A passive voltage divider network, with two resistors connected in series is des
 
 The current mirror circuit generates the voltage signal in proportion to the current flow. The current mirror circuit is used to measure current in the range of 0 to 1A. This voltage signal is fed to the ADC of PIC16F15276 microcontroller to measure current through the battery terminal and current drawn by the load.
 
-The Current Direction control is designed using P-channel MOSFET, Schottky diode and Resistor, the current direction control circuit is used to switch the load source power. When the USB power is available the switch directs power from USB to load and when USB power is not available the switch directs power from battery to load.
+The Current Direction control is designed using a P-channel MOSFET, Schottky diode and Resistor. The current direction control circuit is used to switch the load source power. 
   
 The SoC of battery can be estimated using the measured current and voltage values and then displayed on the custom dashboard window of data visualizer along with the measured voltage and current values.
 
