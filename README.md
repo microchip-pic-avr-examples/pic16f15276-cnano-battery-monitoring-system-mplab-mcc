@@ -24,7 +24,7 @@ This code example highlights the implementation of a Battery Monitoring System u
 
 ## Demo Description 
 
-The Battery Monitoring System code example aims to measure the power drawn by connected load and estimate the SoC of the battery. A Lithium-ion Battery with 2500MAH capacity, MCP73837/8 AC/USB Dual Input Battery Charger Evaluation Board, TO220-5 Voltage Regulator Evaluation Board with MCP1826 LDO and measurement circuits are used in the code example for battery monitoring system demonstration.
+The Battery Monitoring System code example aims to measure the power drawn by connected load and estimate the SoC of the battery. A Lithium-ion Battery with 2500mAh capacity, MCP73837/8 AC/USB Dual Input Battery Charger Evaluation Board, TO220-5 Voltage Regulator Evaluation Board with MCP1826 LDO and measurement circuits are used in the code example for battery monitoring system demonstration.
 
 The measurement circuits are built on MikroElektronika PROTO click using passive and active electronic components, to measure charging and discharging current of the battery and voltage across the input, battery, and load (load resistor). The Battery Charger Evaluation Board is used to charge the battery when the battery voltage goes below (certain) voltage and Voltage Regulator Evaluation Board is used to provide constant voltage of 0.8V to the load.
 
